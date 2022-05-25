@@ -23,7 +23,7 @@ function network_create() {
 	az network nsg create --resource-group $group --name $nsg
 	read -p "Add your public IP to allowed SSH client IPs in NSG? (y|n): " allow_ssh
 	if [ $allow_ssh == "y" ]; then
-		az network nsg rule create --resource-group $group --nsg-name $nsg --name "Allow SSH" --priority 100 --access Allow --source-address-prefixes $(curl -s ifconfig.me)/32 --destination-port-ranges 22 --protocol Tcp --description="Accept SSH connections from my public IP"
+		az network nsg rule create --resource-group $group --nsg-name $nsg --name "Allow SSH" --priority 100 --access Allow --source-address-prefixes $(curl -s https://ifconfig.me)/32 --destination-port-ranges 22 --protocol Tcp --description="Accept SSH connections from my public IP"
 	fi 
 	az network vnet create --resource-group $group --name $vnet --address-prefix 10.0.0.0/16 --subnet-name $subnet --subnet-prefix 10.0.0.0/24 --network-security-group $nsg
 };
