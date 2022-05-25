@@ -7,14 +7,14 @@ Necessary Dependendies:
 azurecli
 bash
 
-== Az Env Setup ==
+### Az Env Setup ###
 
 Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds SSH IP to NSG, and starts VM build workflow.
 
-== Build VM ==
+### Build VM ###
 
 Useful once environment is already set up via Az Env Setup script.
 
-== Azure Update SSH IP ==
+### Azure Update SSH IP ###
 
 Self-explanatory.
