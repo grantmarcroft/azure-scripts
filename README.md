@@ -9,7 +9,7 @@ bash
 
 == Az Env Setup ==
 
-Outputs locations, sets up resource group, VNet, subnet, Network Security Group, adds SSH IP to NSG, and 
+Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds SSH IP to NSG, and starts VM build workflow.
 
 == Build VM ==
 
