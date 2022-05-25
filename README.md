@@ -5,7 +5,10 @@ A collection of one-off bash scripts that are useful for quickly spinning up tes
 Necessary Dependendies:
 
 azurecli
+
 bash
+
+Access to https://ifconfig.me
 
 ### Az Env Setup ###
 
