@@ -12,14 +12,12 @@ read -p "NSG name?: " nsg
 
 read -p "List Sizes? (y|n): " list_sizes
 if [ $list_sizes == "y" ]; then
-	sizes=$(az vm list-sizes --location $region | grep "name" | cut -d'"' -f 4 | sort )
-	echo "$sizes"
+	az vm list-sizes --location $region | grep "name" | cut -d'"' -f 4 | sort
 fi
 
 read -p "List SUSE Images? (y|n): " list_images
 if [ $list_images == "y" ]; then
-	images=$(az vm image list --publisher suse --all | grep urn | cut -d'"' -f4 | sort -r -k 4 -t':')
-	echo "$images";
+	az vm image list --publisher suse --all | grep urn | cut -d'"' -f4 | sort -r -k 4 -t':'
 fi
 
 read -p "Name your VM: " vm_name
