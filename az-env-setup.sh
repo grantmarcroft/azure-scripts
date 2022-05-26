@@ -33,13 +33,11 @@ function vm_create() {
 	echo -e "--------\nVM Setup\n--------"
 	read -p "List VM sizes? (y|n): " list_sizes
 	if [ $list_sizes == "y" ]; then
-		sizes=$(az vm list-sizes --location $region | grep "name" | cut --delimiter='"' --fields=4 | sort)
-		echo "$sizes"
+		az vm list-sizes --location $region | grep "name" | cut --delimiter='"' --fields=4 | sort
 	fi
 	read -p "List SUSE images? (y|n): " list_images
 	if [ $list_images == "y" ]; then
-		images=$(az vm image list --publisher suse --all | grep "urn" | cut --delimiter='"' --fields=4 | sort --reverse --key=4 --field-separator=':')
-		echo "$images";
+		az vm image list --publisher suse --all | grep "urn" | cut --delimiter='"' --fields=4 | sort --reverse --key=4 --field-separator=':'
 	fi
 	read -p "Name your VM: " vm_name
 	read -p "Existing SSH key pair? (y|n): " key_exists
