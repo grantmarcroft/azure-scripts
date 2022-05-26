@@ -14,7 +14,7 @@ Must be logged in to azure-cli with a valid Microsoft Azure subscription
 
 ### Az Env Setup ###
 
-Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds user's SSH client IP to NSG allowed list, and starts VM build workflow.
+Output available locations on user request, set up resource group in said location, create VNet, subnet, and Network Security Group, add user's SSH client IP to NSG allowed list, and start VM build workflow.
 
 Usage Example: 
 
