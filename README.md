@@ -16,7 +16,7 @@ Output available locations on user request, sets up resource group in said locat
 
 Usage Example: 
 
-bash <(https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/az-env-setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/az-env-setup.sh)
 
 ### Azure Update SSH IP ###
 
@@ -24,7 +24,7 @@ Update rule in NSG in case pubic IP changed after NSG was created.
 
 Usage Example:
 
-bash <(https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/azure-update-ssh-ip.sh)
+bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/azure-update-ssh-ip.sh)
 
 ### Build VM ###
 
@@ -32,4 +32,4 @@ Supplemental script useful after environment (Resource Group, VNet, subnet and N
 
 Usage Example:
 
-bash <(https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/build-vm.sh)
+bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/build-vm.sh)
