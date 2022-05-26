@@ -12,7 +12,7 @@ Access to https://ifconfig.me
 
 ### Az Env Setup ###
 
-Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds SSH IP to NSG allowed list, and starts VM build workflow.
+Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds user's SSH client IP to NSG allowed list, and starts VM build workflow.
 
 ### Build VM ###
 
