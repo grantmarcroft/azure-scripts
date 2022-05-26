@@ -12,6 +12,8 @@ Access to https://ifconfig.me
 
 Must be logged in to azure-cli with a valid Microsoft Azure subscription
 
+!!DON'T FORGET TO DELETE YOUR RESOURCE GROUP WHEN YOU ARE DONE WITH IT!!
+
 ### Az Env Setup ###
 
 Output available locations on user request, set up resource group in said location, create VNet, subnet, and Network Security Group, add user's SSH client IP to NSG allowed list, and start VM build workflow.
