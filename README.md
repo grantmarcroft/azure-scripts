@@ -24,7 +24,7 @@ bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/mai
 
 ### Azure Update SSH IP ###
 
-Update rule in NSG in case pubic IP changed after NSG was created.
+Update rule in NSG in case public IP changed after NSG was created.
 
 Usage Example:
 
