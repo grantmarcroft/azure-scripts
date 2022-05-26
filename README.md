@@ -10,6 +10,8 @@ bash
 
 Access to https://ifconfig.me
 
+Must be logged in to azure-cli with a valid Microsoft Azure subscription
+
 ### Az Env Setup ###
 
 Output available locations on user request, sets up resource group in said location, creates VNet, subnet, and Network Security Group, adds user's SSH client IP to NSG allowed list, and starts VM build workflow.
