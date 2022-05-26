@@ -4,7 +4,7 @@ A collection of one-off bash scripts that are useful for quickly spinning up tes
 
 Necessary Dependendies:
 
-azurecli
+azure-cli
 
 bash
 
