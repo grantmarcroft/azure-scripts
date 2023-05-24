@@ -4,7 +4,8 @@
 
 # Deprecation Notice
 echo "# DEPRECATION NOTICE #"
-echo "This script is deprecated and no longer maintained.  Script currently maintained under https://github.com/susegrant/azure-scripts"
+echo "This script is deprecated and no longer maintained."
+echo "Script currently maintained under https://github.com/susegrant/azure-scripts"
 read -p "Continue anyways? (y|n): " continue
 
 if [ $continue != "y" ]; then
