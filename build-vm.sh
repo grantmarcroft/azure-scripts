@@ -2,6 +2,16 @@
 # Add VMs to existing RG and Network
 # Author: Grant Marcroft
 
+# Deprecation Notice
+echo "# DEPRECATION NOTICE #"
+echo "This script is deprecated and no longer maintained.  Script currently maintained under https://github.com/susegrant/azure-scripts"
+read -p "Continue anyways? (y|n): " continue
+
+if [ $continue != "y" ]; then
+        exit;
+fi
+
+
 echo -e "--------\nVM Setup\n--------"
 
 read -p "Remind me, what's your Resource Group name again?: " group
