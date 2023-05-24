@@ -1,6 +1,8 @@
 # azure-scripts
 
-A collection of one-off bash scripts that are useful for quickly spinning up test SLE workloads in Azure.  
+Moved to https://github.com/susegrant/azure-scripts
+
+<s>A collection of one-off bash scripts that are useful for quickly spinning up test SLE workloads in Azure.  
 
 Necessary Dependendies:
 
@@ -36,4 +38,4 @@ Supplemental script useful after environment (Resource Group, VNet, subnet and N
 
 Usage Example:
 
-bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/build-vm.sh)
+  bash <(curl -s https://raw.githubusercontent.com/grantmarcroft/azure-scripts/main/build-vm.sh)</s>
