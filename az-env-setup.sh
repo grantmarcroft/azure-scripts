@@ -2,6 +2,15 @@
 # Create one or more Azure VMs with all needed dependencies
 # Author: Grant Marcroft
 
+# Deprecation Notice
+echo "# DEPRECATION NOTICE #
+echo "This script is deprecated and no longer maintained.  Script currently maintained under https://github.com/susegrant/azure-scripts"
+read -p "Continue anyways? (y|n): " continue
+
+if [ $continue != "y" ]; then
+        exit;
+fi
+
 # Create Resource Group
 function rg_create() { 
 	echo -e "--------------------\nResource Group Setup\n--------------------"
