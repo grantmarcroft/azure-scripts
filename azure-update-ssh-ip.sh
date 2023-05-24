@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Deprecation Notice
+echo "# DEPRECATION NOTICE #
+echo "This script is deprecated and no longer maintained.  Script currently maintained under https://github.com/susegrant/azure-scripts"
+read -p "Continue anyways? (y|n): " continue
+
+if [ $continue != "y" ]; then
+        exit;
+fi
+
 read -p "Resource Group: " group
 read -p "NSG name: " nsg
 
